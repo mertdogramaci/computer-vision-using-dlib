@@ -5,10 +5,10 @@ import dlib
 detector = dlib.get_frontal_face_detector()
 
 # Load the predictor
-predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("-pretrained landmark detector path-")
 
 # read the image
-img = cv2.imread("Screenshot 2021-04-26 225708.png")
+img = cv2.imread("-image file name-")
 
 # Convert image into grayscale
 gray = cv2.cvtColor(src=img, code=cv2.COLOR_BGR2GRAY)

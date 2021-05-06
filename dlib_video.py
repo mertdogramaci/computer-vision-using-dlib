@@ -1,7 +1,7 @@
 import cv2
 import dlib
 
-predictor_path = 'shape_predictor_68_face_landmarks.dat'
+predictor_path = "-pretrained landmark detector path-"
 
 # Initialize the default frontal face detector
 detector = dlib.get_frontal_face_detector()
